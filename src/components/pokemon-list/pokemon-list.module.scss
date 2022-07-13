@@ -1,0 +1,32 @@
+@import "src/styles/variables";
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    width: 25%;
+    color: $theme-color;
+    padding: 10px;
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 5px;
+      border: 2px solid $theme-color;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .name {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+}

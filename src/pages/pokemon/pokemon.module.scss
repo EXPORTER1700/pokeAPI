@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+
+  .allPokemon {
+    width: 60%;
+  }
+
+  .currentPokemon {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

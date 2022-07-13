@@ -1,0 +1,93 @@
+@import "reset";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Edu SA Beginner', cursive;
+  background-color: $background-color;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+button {
+  border: 0;
+  background-color: $theme-color;
+  width: 60px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $text-color;
+  border-radius: 10px;
+  font-family: 'Edu SA Beginner', cursive;
+  font-weight: 600;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(1.1);
+  }
+}
+
+input {
+  width: 150px;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid $theme-color;
+  color: $theme-color;
+  font-weight: 600;
+  background-color: $background-color;
+  font-size: 20px;
+  font-family: 'Edu SA Beginner', cursive;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+select {
+  width: 80px;
+  height: 30px;
+  background-color: $theme-color;
+  color: $text-color;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Edu SA Beginner', cursive;
+  font-size: 16px;
+  font-weight: 600;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  background-color: $theme-color;
+  color: $text-color;
+  border-radius: 0 0 10px 10px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  color: $text-color;
+}
+

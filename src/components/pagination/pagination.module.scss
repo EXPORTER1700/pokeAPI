@@ -1,0 +1,18 @@
+@import "src/styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+
+  .item {
+    color: $theme-color;
+    cursor: pointer;
+  }
+
+  .current {
+    font-weight: 700;
+  }
+}
